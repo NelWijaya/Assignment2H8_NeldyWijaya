@@ -1,0 +1,172 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: gainsboro;
+}
+
+nav li {
+    list-style: none;
+    margin: 10px 0px;
+    padding: 0px 10px;
+}
+
+nav ol {
+    padding: 0px 20px;
+}
+
+nav {
+    background-color: white;
+    padding: 5px 0px;
+    box-shadow: 0px 5px rgb(179, 179, 179);
+}
+
+nav a {
+    color: gray;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(58, 58, 58);
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+#box {
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    border: solid 1px rgb(211, 211, 211);
+    padding: 30px 25px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+table {
+    text-align: left;
+}
+
+table th {
+    padding: 0px 25px 0px 0px;
+}
+
+#photo img {
+    width: 100%;
+}
+
+#kontak {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+#kontak:hover {
+    background-color: rgb(0, 0, 117);
+}
+
+#resume {
+    border: 1px solid gray;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+}
+
+#resume:hover {
+    background-color: gray;
+    color: white;
+}
+
+.btn {
+    padding: 10px 15px;
+    margin-right: 5px;
+}
+
+form {
+    padding: 25px;
+    margin: auto;
+    margin-top: 50px;
+    width: 93%;
+    border: solid 1px rgb(211, 211, 211);
+    background-color: white;
+    border-radius: 5px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 5px 0px;
+}
+
+#submit {
+    padding: 10px 0px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    box-shadow: none;
+}
+
+
+/* For mobile phones: */
+
+@media only screen and (max-width: 600px) {
+    #photo {
+        padding: 0px 10px;
+        width: 30%;
+    }
+    #nickname {
+        width: 50%;
+    }
+    .btn {
+        text-align: center;
+        margin: 10px 0px;
+        display: block;
+    }
+    #detail {
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    nav li {
+        margin: 0px;
+        display: inline;
+    }
+    nav ol {
+        text-align: right;
+    }
+    #photo {
+        padding: 0px 10px;
+        width: 10%;
+    }
+    #nickname {
+        width: 40%;
+        border-right: 1px solid rgb(211, 211, 211);
+    }
+    #detail {
+        padding-left: 15px;
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #nickname {
+        width: 30%;
+    }
+    #detail {
+        width: 40%;
+    }
+}

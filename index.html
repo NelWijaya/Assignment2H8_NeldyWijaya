@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ol>
+            <li>
+                <a href="#" class="decoration-none">HOME</a></li>
+            <li>
+                <a href="#" class="decoration-none">PRODUCT</a></li>
+            <li>
+                <a href="#" class="decoration-none">GALLERY</a></li>
+            <li>
+                <a href="#" class="decoration-none">BLOG</a></li>
+            <li>
+                <a href="#" class="decoration-none">INVENTORY</a></li>
+        </ol>
+    </nav>
+
+    <div id="box">
+        <div id="photo" class="inline-block">
+            <img src="/image/me.png" alt="me.png">
+        </div>
+
+        <div id="nickname" class="inline-block">
+            <h3>Neldy Wijaya</h3>
+            <p>Back End Laravel</p> <br>
+            <a href="#" class="btn decoration-none" id="kontak">Kontak</a>
+            <a href="#" class="btn decoration-none" id="resume">Resume</a>
+        </div>
+
+        <div id="detail" class="inline-block">
+            <table>
+                <tr>
+                    <th>Availability</th>
+                    <td>Full Time</td>
+                </tr>
+                <tr>
+                    <th>Usia</th>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <th>Lokasi</th>
+                    <td>Jakarta</td>
+                </tr>
+                <tr>
+                    <th>Pengalaman</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>email@gmail.com</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <form action="#">
+        <label for="nama">Nama</label><br>
+        <input type="text" name="nama" id="nama" placeholder="masukkan nama Anda"><br>
+        <label for="role">Role</label><br>
+        <select name="role" id="role">
+            <option value=""></option>
+            <option value="dosen">dosen</option>
+            <option value="mahasiswa">mahasiswa</option>
+        </select>
+        <br>
+        <label for="availability">Availability</label><input type="text" name="availability" id="availability"><br>
+        <label for="usia">Usia</label><input type="number" name="usia" id="usia"><br>
+        <label for="years_experience">Years Experience</label><input type="number" name="years_experience" id="years_experience"><br>
+        <label for="email">Email</label><input type="email" name="email" id="email"><br>
+        <input type="submit" name="submit" id="submit" value="submit">
+    </form>
+
+</body>
+
+</html>
