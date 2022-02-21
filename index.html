@@ -11,78 +11,119 @@
 </head>
 
 <body>
-    <nav>
-        <ol>
-            <li>
-                <a href="#" class="decoration-none">HOME</a></li>
-            <li>
-                <a href="#" class="decoration-none">PRODUCT</a></li>
-            <li>
-                <a href="#" class="decoration-none">GALLERY</a></li>
-            <li>
-                <a href="#" class="decoration-none">BLOG</a></li>
-            <li>
-                <a href="#" class="decoration-none">INVENTORY</a></li>
-        </ol>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRODUCT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">INVENTORY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div id="box">
-        <div id="photo" class="inline-block">
-            <img src="/image/me.png" alt="me.png">
+    <div class="container">
+        <div class="card mt-3 mt-md-5">
+            <div class="card-body">
+                <div class="row">
+                    <div id="photo" class="col-5 col-md-2">
+                        <img src="/image/me.png" class="img-fluid" alt="me.png">
+                    </div>
+
+                    <div id="nickname" class="col-7 col-md-4 mt-4">
+                        <h3 id="nameProfile"></h3>
+                        <p id="roleProfile"></p> <br>
+                        <a href="#" class="btn btn-primary">Kontak</a>
+                        <a href="#" class="btn btn-light">Resume</a>
+                    </div>
+
+                    <div id="detail" class="col-12 col-md-6 mt-4">
+                        <table>
+                            <tr>
+                                <th>Availability</th>
+                                <td id="availabilityProfile"></td>
+                            </tr>
+                            <tr>
+                                <th>Usia</th>
+                                <td id="usiaProfile"></td>
+                            </tr>
+                            <tr>
+                                <th>Lokasi</th>
+                                <td id="lokasiProfile"></td>
+                            </tr>
+                            <tr>
+                                <th>Pengalaman</th>
+                                <td id="pengalamanProfile"></td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td id="emailProfile"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div id="nickname" class="inline-block">
-            <h3 id="nameProfile"></h3>
-            <p id="roleProfile"></p> <br>
-            <a href="#" class="btn decoration-none" id="kontak">Kontak</a>
-            <a href="#" class="btn decoration-none" id="resume">Resume</a>
-        </div>
+        <div class="card mt-3 mt-md-4">
+            <div class="card-body">
+                <form action="#">
+                    <label for="nama">Nama</label><br>
+                    <input type="text" class="form-control" name="nama" id="nama" placeholder="masukkan nama Anda"><br>
+                    <label for="role">Role</label><br>
+                    <select name="role" class="form-control" id="role">
+                        <option value=""></option>
+                        <option value="Front End Designer">Front End Designer</option>
+                        <option value="Back End Developer">Back End Developer</option>
+                        <option value="UI UX Designer">UI UX Designer</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                    </select>
+                    <br>
+                    <label for="availability">Availability</label><br>
+                    <select class="form-control" name="availability" id="availability">
+                        <option value=""></option>
+                        <option value="Front End Designer">Full Time</option>
+                        <option value="Back End Developer">Part Time</option>
+                        <option value="UI UX Designer">Internship</option>
+                        <option value="Digital Marketing">Contract</option>
+                    </select>
 
-        <div id="detail" class="inline-block">
-            <table>
-                <tr>
-                    <th>Availability</th>
-                    <td id="availabilityProfile"></td>
-                </tr>
-                <tr>
-                    <th>Usia</th>
-                    <td id="usiaProfile"></td>
-                </tr>
-                <tr>
-                    <th>Lokasi</th>
-                    <td id="lokasiProfile"></td>
-                </tr>
-                <tr>
-                    <th>Pengalaman</th>
-                    <td id="pengalamanProfile"></td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td id="emailProfile"></td>
-                </tr>
-            </table>
+
+                    <label for="usia">Usia</label>
+                    <input type="number" class="form-control" name="usia" id="usia"><br>
+
+                    <label for="lokasi">Lokasi</label>
+                    <input type="text" class="form-control" name="lokasi" id="lokasi"><br>
+
+                    <label for="years_experience">Years Experience</label>
+                    <input type="number" class="form-control" name="pengalaman" id="pengalaman"><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email"><br>
+
+                    <a onclick="edited(this)" name="submit" id="submit" class="btn btn-primary form-control"> Submit </a>
+                </form>
+            </div>
         </div>
     </div>
 
-    <form action="#">
-        <label for="nama">Nama</label><br>
-        <input type="text" name="nama" id="nama" placeholder="masukkan nama Anda"><br>
-        <label for="role">Role</label><br>
-        <select name="role" id="role">
-            <option value=""></option>
-            <option value="Front End Designer">Front End Designer</option>
-            <option value="Back End Developer">Back End Developer</option>
-            <option value="UI UX Designer">UI UX Designer</option>
-            <option value="Digital Marketing">Digital Marketing</option>
-        </select>
-        <br>
-        <label for="availability">Availability</label><input type="text" name="availability" id="availability"><br>
-        <label for="usia">Usia</label><input type="number" name="usia" id="usia"><br>
-        <label for="lokasi">Lokasi</label><input type="text" name="lokasi" id="lokasi"><br>
-        <label for="years_experience">Years Experience</label><input type="number" name="pengalaman" id="pengalaman"><br>
-        <label for="email">Email</label><input type="email" name="email" id="email"><br>
-        <a onclick="edited(this)" name="submit" id="submit" class="btn btn-primary form-control"> Submit </a>
-    </form>
+
 
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
